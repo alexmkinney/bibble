@@ -1,0 +1,52 @@
+body {
+  font-family: "Papyrus", sans-serif;
+  background: #FCF5E5;
+}
+
+.sidebar {
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  right: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+  padding-left: 10px;
+}
+
+.main {
+  margin-right: 160px; /* Same width as the sidebar + right position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+.output {
+  border: 5px solid #800020;
+  padding: 10px;
+}
+
+.image {
+  width: 150px;
+  height: 87px;
+  float: right;
+  padding-top: 12px;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+}
+
+@font-face {
+  font-family: "Papyrus";
+  font-style: normal;
+  src: url("fonts/merged.woff2") format("woff2");
+}
+
+/* cool spacer thing */
+/* border-bottom: 1px solid #eee; */

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test</title>
+  <!-- CSS file -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- JavaScript file -->
+  <link rel="preload" href="bible.js" as="script">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="prefetch" href="images/vibe.png">
+</head>
+<body>
+
+<script>let FF_FOUC_FIX;</script>
+<div class="main">
+  <header class="main-header">
+    <img id="image" class="image hidden" src="images/temp.jpg" alt="hi">
+    <h1 style="display: inline;">bibble...</h1>
+    <h5 style="display: inline; padding-left: 10px;">by God</h5>
+  </header>
+
+  <div class="scripture-nav">
+    <select name="book" id="book"></select>
+    <select name="chapter" id="chapter"></select>
+    <button type="button" name="load-button" id="load-button">Go</button>
+  </div>
+  
+  <div class="output"></div>
+</div>
+
+<div class="sidebar">
+  <div title="Change how the tetragrammaton is displayed">
+    <label for="tetra">Tetragrammaton:</label>
+    <select name="tetra" id="tetra">
+      <option value="the LORD">the LORD</option>
+      <option value="YHWH">YHWH</option>
+      <option value="Yahweh">Yahweh</option>
+      <option value="Jehovah">Jehovah</option>
+      <option value="יהוה">יהוה</option>
+    </select><br>
+  </div>
+
+  <div title="Capitalize pronouns that refer to God">
+    <input type="checkbox" name="pronouns" id="pronouns">
+    <label for="pronouns"> Capitalize "He"</label><br><br>
+  </div>
+
+  <div title="Activate Latina Mode">
+    <input type="checkbox" name="latinamode" id="latinamode">
+    <label for="latinamode"> Latina Mode</label><br>
+  </div>
+</div>
+
+<script src="bible.js"></script>
+
+</body>
+</html>
